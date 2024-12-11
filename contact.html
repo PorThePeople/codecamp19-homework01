@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>My Resume: Contact Me</title>
+		<style>
+			form {
+				border: lightslategray solid;
+				padding: 20px;
+				width: 300px;
+				border-radius: 5%;
+			}
+			input,
+			select,
+			textarea {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navigation Bar-->
+		<div>
+			<a href="./index.html">Homepage</a> |
+			<a href="./education.html">Education</a> |
+			<a href="./work.html">Work Experience</a> |
+			<a href="#">Contact Me</a>
+			<hr />
+		</div>
+		<!-- Page Content -->
+		<div>
+			<h1>Contact Me!</h1>
+		</div>
+		<form>
+			<p>Enter your contact info</p>
+			<label for="name">Your Name: </label><br />
+			<input type="text" name="name" id="name" /><br /><br />
+			<label for="email">Your E-mail: </label><br />
+			<input type="email" name="email" id="email" /><br /><br />
+			<label for="gender">Gender</label><br />
+			<select name="gender" id="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="unspecified">Others</option></select
+			><br /><br />
+			<label for="message">Message:</label><br />
+			<textarea name="message" id="message" rows="10"></textarea
+			><br /><br />
+			<!-- Submit and reset buttons can be created with both <input> and <button> tags. The latter is used to separate the buttons from other input for styling purposes -->
+			<button type="button">Submit</button>
+			<button type="reset">Reset</button>
+		</form>
+	</body>
+</html>
